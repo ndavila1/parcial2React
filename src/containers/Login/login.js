@@ -6,7 +6,7 @@ class Login extends Component {
         return (
             <div>
                 <Link to='panel'>
-                    Iniciar sesion
+                    Iniciar placeholder
                 </Link>
             </div>
         )

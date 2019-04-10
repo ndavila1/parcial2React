@@ -1,10 +1,9 @@
 import React from 'react';
+import './Footer.sass';
 
 const Footer = () => {
-    return(
-        <div>
-            <footer>Todos los derechos reservados</footer>
-        </div>
+    return (
+        <footer>Todos los derechos reservados</footer>
     );
 };
 

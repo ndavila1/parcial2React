@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import NavBar from './../../components/NavBar/navbar';
+import './Post.sass';
 
 class Posts extends Component {
     constructor() {
@@ -21,12 +23,19 @@ class Posts extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="contenidoPost">
+                <NavBar></NavBar>
                 <ul>
-                    {
-                        this.state.posts.map(post =>
-                            <li>{post.title}</li>)
-                    }
+                    <div className="container">
+                        {
+                            this.state.posts.map(posts =>
+                                <div className="box">
+                                    <li><h3>{posts.title}</h3>
+                                        <p className="texto">{posts.body}</p></li>
+                                </div>)
+                        }
+
+                    </div>
                 </ul>
             </div>
         );
